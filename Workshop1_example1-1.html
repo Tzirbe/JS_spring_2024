@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Workshop 1</title>
+
+		<!-- script tag is where Javascript goes to -->
+		<script>
+			for(var i = 0; i < 400; i++) {
+				console.log("This round is " + i);
+			}
+
+			alert("Hello World!");
+			alert("Another hello world");
+			alert("Still one more hello world");
+
+			var firstname = "Sirpa";
+			var lastname = "Koljonen";
+			alert(firstname);
+
+			document.write(lastname + "<br>");
+			alert(firstname+" "+ lastname);
+			console.log(lastname+", "+ firstname);
+
+// conditionals
+
+			var x = 50;
+			var order = 'Beer';
+
+			if (x > 50) 
+				{document.write("He's over 50!" );
+				console.log("He's over 50!"); }
+		 	else if (x <= 50 && x > 30)
+				{document.write("<strong>Middle aged man</strong>, who ordered some "+order);
+				console.log("Middle aged man, who ordered some "+order); }
+			else if (x <30 && x >= 18)
+				{document.write("<strong>Young adult</strong>, who drinks just water")
+				console.log("Young adult, who drinks just water"); }
+			else if (x <= 0) 
+				{document.write("You're not even born!")
+				console.log("You're not even born!"); }
+			else 
+				{document.write("It seems you're bit underaged.");
+				console.log("It seems you're bit underaged."); }
+
+// Loops
+
+				var arr = [];
+
+				for (var i=0; i<15; i++) {
+
+					var randomNumber = Math.floor(Math.random() * 100) + 1;
+
+					//put the generated random numbers to console log
+					console.log("Generated random numbers:" +randomNumber);
+
+					arr.push(randomNumber);
+
+					// document.write
+					document.write("<p>Generated random number: " + randomNumber + "</p>");
+
+				}
+				console.log(arr);
+
+// Functions
+
+		// Returns true if age is over 18, otherwise returns false
+
+			function areYouOldEnough(age) {
+				if (age < 18)
+					{console.log(false);
+					return false;
+				}
+				else
+					{console.log(true);
+				return true;
+				}
+			}
+
+	// Calling document
+
+		console.log( areYouOldEnough(16) );
+		document.write( areYouOldEnough(19) );
+
+	// Call the value and pass the returned value to alert();
+	
+		alert(areYouOldEnough(5));
+		alert(areYouOldEnough(25));
+		</script>
+
+	</head>
+
+	<body>
+		<h1>Welcome to example page</h1>
+		<p> Lorem ipsum dolorem...   </p>
+
+	</body>
+
+</html>
+
+
+
+
